@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیستم حسابداری هوشمند</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>سیستم حسابداری هوشمند</h1>
+    </header>
+    <main>
+        <section id="invoice-section">
+            <h2>ثبت فاکتور</h2>
+            <form id="invoice-form">
+                <label for="customer-name">نام مشتری:</label>
+                <input type="text" id="customer-name" required>
+                
+                <label for="invoice-amount">مبلغ فاکتور:</label>
+                <input type="number" id="invoice-amount" required>
+                
+                <label for="invoice-date">تاریخ فاکتور:</label>
+                <input type="date" id="invoice-date" required>
+                
+                <button type="submit">ثبت فاکتور</button>
+            </form>
+        </section>
+        
+        <section id="expense-section">
+            <h2>ثبت هزینه</h2>
+            <form id="expense-form">
+                <label for="expense-description">توضیحات هزینه:</label>
+                <input type="text" id="expense-description" required>
+                
+                <label for="expense-amount">مبلغ هزینه:</label>
+                <input type="number" id="expense-amount" required>
+                
+                <label for="expense-date">تاریخ هزینه:</label>
+                <input type="date" id="expense-date" required>
+                
+                <button type="submit">ثبت هزینه</button>
+            </form>
+        </section>
+        
+        <section id="product-section">
+            <h2>ثبت کالا</h2>
+            <form id="product-form">
+                <label for="product-name">نام کالا:</label>
+                <input type="text" id="product-name" required>
+                
+                <label for="product-quantity">تعداد:</label>
+                <input type="number" id="product-quantity" required>
+                
+                <label for="product-price">قیمت واحد:</label>
+                <input type="number" id="product-price" required>
+                
+                <button type="submit">ثبت کالا</button>
+            </form>
+        </section>
+        
+        <section id="report-section">
+            <h2>گزارش‌ها</h2>
+            <button id="generate-report">تولید گزارش ماهیانه</button>
+            <div id="report-result"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
